@@ -270,7 +270,7 @@ header {
 
 /* portfolio section */
 
-.my-skills {
+.recent-work {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
@@ -279,12 +279,12 @@ header {
     text-align: center;
 }
 
-.section__title--skills {
-    color: var(--clr-accent);
+.section__title--recent-work {
+    color: var(--clr-light);
     position: relative;
 }
 
-.section__title--skills::after {
+.section__title--recent-work::after {
     content: '';
     display: block;
     width: 2em;
@@ -294,7 +294,7 @@ header {
     opacity: 0.25;
 }
 
-.skills {
+.my-recent-work {
     margin-bottom: 4em;
 }
 
@@ -304,7 +304,7 @@ header {
 }
 
 @media (min-width: 800px) {
-    .skills {
+    .my-recent-work {
         display: flex;
         max-width: 1000px;
         margin-left: auto;

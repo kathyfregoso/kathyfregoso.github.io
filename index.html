@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kathy Fregoso's Portfolio</title>
+    <title>Kathy Fregoso</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
     <link rel="stylesheet" href="css/styles.css">
@@ -12,124 +12,89 @@
 <body>
 
     <header>
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="img/KFlogo.png" alt="Kathy Fregoso logo">
-        </div>
+        </div> -->
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#recent-work" class="nav__link">Recent Work</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- INTRO SECTION -->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, my name is <strong>Kathy Fregoso</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-        <img src="img/kathy-01.jpg" alt="a picture of Kathy Fregoso" class="intro__img">
-    </section>
+           <!-- about ME -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Kathy Fregoso</h2>
+        <p class="section__subtitle section__subtitle--about">Software Engineer</p>
 
-        <!-- MY skills -->
-    <section class="my-skills" id="skills">
-        <h2 class="section__title section__title--skills">Skills</h2>
-        <div class="skills">
+        <div class="about-me__body">
+            <p>I'm a full-stack software engineer living in Los Angeles, CA, with experience in JavaScript, TypeScript, Node.js, Golang, PostgreSQL, MongoDB, Docker, and React. 
+            </p>
+            <p>Recently, I co-created <a href="https://github.com/qmantis">QMantis</a>, 
+                an open source observability tool for GraphQL APIs built with express-graphql, TimeScaleDB/Promscale, and OpenTelemetry.
+            </p>
+            <p>In my free time, I like to read, play with my cat, and expand my stationery collection, to name a few things.</p>
+        </div>
+        <img src="" alt="" class="about-me__img">
+
+        <img src="img/kathy-01.jpg" alt="picture of Kathy Fregoso" class="intro__img">
+        <!-- <img src="img/avatarme.png" alt="avatar of Kathy" class="about-me__img"> -->
+        </section>
+
+        <!-- Recent Work -->
+    <section class="recent-work" id="recent-work">
+        <h2 class="section__title section__title--recent-work">Recent Work</h2>
+        <div class="my-recent-work">
             <div class="skill">
                 <h3>HTML</h3>
                 <p>Let me build the foundation ....</p>
-            </div> <!-- / skill -->
+            </div> 
 
                 <div class="skill">
                     <h3>CSS</h3>
                     <p>I can make your website or app look stunning....</p>
-                </div> <!-- / skill -->
+                </div> 
 
                     <div class="skill">
                         <h3>Javascript</h3>
                         <p>Let me add a dose of functionality.</p>
-                    </div> <!-- / skill -->
-        </div> <!-- / skills -->
+                    </div> 
+        </div> 
 
         <a href="#projects" class="btn">Projects</a> 
     </section>
 
-            <!-- about ME -->
-        <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Up and coming web developer in Los Angeles</p>
-
-        <div class="about-me__body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam nisi corporis debitis possimus odit, repellat quisquam vitae qui laborum, ab ipsum doloremque perspiciatis voluptatibus vero quasi ipsam necessitatibus? Molestias.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam nisi corporis debitis possimus odit, repellat quisquam vitae qui laborum, ab ipsum doloremque perspiciatis voluptatibus vero quasi ipsam necessitatibus? Molestias.
-            </p>
-        </div>
-
-        <img src="img/avatarme.png" alt="avatar of Kathy" class="about-me__img">
-        </section>
-
              <!-- Projects-->
     <section class="projects" id="projects">
             <h2 class="section__title section__title--projects">Projects</h2>
-            <p class="section__subtitle section__subtitle--projects">A selection of my work demonstrating my skills.</p>
+            <p class="section__subtitle section__subtitle--projects"></p>
 
         <div class="portfolio">
              <!-- PORTFOLIO Item 1 -->
-            <a href="#" class="portfolio__item">
+            <div class="portfolio__item">
                 <img src="img/portfolio-01.jpg" alt="" class="portfolio--img">
-            </a>
+            </div>
 
                 <!-- PORTFOLIO Item 2 -->
-            <a href="#" class="portfolio__item">
+            <div class="portfolio__item">
                 <img src="img/portfolio-02.jpg" alt="" class="portfolio--img">
-            </a>
+            </div>
 
                 <!-- PORTFOLIO Item 3 -->
-            <a href="#" class="portfolio__item">
+            <div class="portfolio__item">
                 <img src="img/portfolio-03.jpg" alt="" class="portfolio--img">
-            </a>
+            </div>
 
                  <!-- PORTFOLIO Item 4 -->
-            <a href="#" class="portfolio__item">
+            <div class="portfolio__item">
                 <img src="img/portfolio-04.jpg" alt="" class="portfolio--img">
-            </a>
-
-                   <!-- PORTFOLIO Item 5 -->
-            <a href="#" class="portfolio__item">
-                <img src="img/portfolio-05.jpg" alt="" class="portfolio--img">
-            </a>
-
-                <!-- PORTFOLIO Item 6 -->
-            <a href="#" class="portfolio__item">
-                <img src="img/portfolio-06.jpg" alt="" class="portfolio--img">
-            </a>
-
-             <!-- PORTFOLIO Item 7 -->
-            <a href="#" class="portfolio__item">
-                <img src="img/portfolio-07.jpg" alt="" class="portfolio--img">
-            </a>
-
-             <!-- PORTFOLIO Item 8 -->
-            <a href="#" class="portfolio__item">
-                <img src="img/portfolio-08.jpg" alt="" class="portfolio--img">
-            </a>
-
-                <!-- PORTFOLIO Item 9 -->
-            <a href="#" class="portfolio__item">
-                <img src="img/portfolio-09.jpg" alt="" class="portfolio--img">
-            </a>
-
-                 <!-- PORTFOLIO Item 10 -->
-            <a href="#" class="portfolio__item">
-                <img src="img/portfolio-10.jpg" alt="" class="portfolio--img">
-            </a>
+            </div>
 
         </div>
     </section>  
@@ -143,10 +108,10 @@
                 <a class="social-list__link" href="https://github.com/kathyfregoso">
                     <i class="fab fa-github-square"></i></a>
                 </li>
-            <li class="social-list__item">
+            <!-- <li class="social-list__item">
                 <a class="social-list__link" href="https://codepen.io/kfregoso">
                     <i class="fab fa-codepen"></i></a>
-            </li>
+            </li> -->
             <li class="social-list__item">
                 <a class="social-list__link" href="https://twitter.com/KathyFregoso">
                     <i class="fab fa-twitter-square"></i></a>
