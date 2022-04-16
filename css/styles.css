@@ -11,9 +11,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #E7ECEF;
-    --clr-dark: #272932;
-    --clr-accent: #0F7173;
+    --clr-light: #F8F8F8;
+    --clr-dark: #000100;
+    --clr-accent: #B4D2E7;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -60,7 +60,6 @@ img {
 strong { font-weight: var(--fw-bold) }
 
 :focus {
-    /* outline: 3px solid var(--clr-accent); */
     outline-offset: 3px;
 }
 
@@ -146,49 +145,9 @@ header .nav__list a {
     margin-left: 1rem;
 }
 
-/* Recent Work / QMantis */
-
-.recent-work {
-    background-color: #260c1a;
-    background-image: url(../img/services-bg.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    /* text-align: center; */
-}
-
-.qmantis-logo {
-    margin: auto;
-    max-width: 50%;
-}
-
-.section__title--recent-work {
-    color: var(--clr-light);
-    position: relative;
-    text-align: center;
-}
-
-.section__title--recent-work::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-/* .my-recent-work {
-    margin-bottom: 1em;
-} */
-
-@media (min-width: 800px) {
-    .my-recent-work {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.nav__link:hover {
+    opacity: .7;
+    color: var(--clr-accent);
 }
 
 /* About Me */
@@ -246,6 +205,57 @@ header .nav__list a {
     }
 }
 
+.about__link:hover {
+    opacity: .7;
+    color: var(--clr-accent);
+}
+
+/* Recent Work / QMantis */
+
+.recent-work {
+    background-color: #A1A6B4;
+    /* background-color: #260c1a; */
+    background-image: url(../img/services-bg.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    /* text-align: center; */
+}
+
+.qmantis-logo {
+    margin: auto;
+    max-width: 50%;
+}
+
+.section__title--recent-work {
+    color: var(--clr-light);
+    position: relative;
+    text-align: center;
+}
+
+.section__title--recent-work::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+/* .my-recent-work {
+    margin-bottom: 1em;
+} */
+
+@media (min-width: 800px) {
+    .my-recent-work {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Other Projects */
 
 .projects {
@@ -254,11 +264,27 @@ header .nav__list a {
     text-align: center;
 }
 
-.section__subtitle--projects {
+.section__title--projects {
+    grid-area: title;
+    position: relative;
+    text-align: center;
+}
+
+.section__title--projects::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+/* .section__subtitle--projects {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
-}
+} */
 
 .portfolio {
     display: grid;
@@ -298,7 +324,23 @@ header .nav__list a {
     color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-body);
+}
+
+.section__title--footer {
+    grid-area: title;
+    position: relative;
+    text-align: center;
+}
+
+.section__title--footer::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto;
+    background: var(--clr-dark);
+    opacity: 0.25;
 }
 
 .footer a { 
@@ -313,10 +355,7 @@ header .nav__list a {
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
+    color: var(--clr-accent);
 }
 
 .social-list {
