@@ -197,17 +197,8 @@ header {
 }
 
 .nav-open .hamburger {
-    transform: rotate(.625turn);
+    transform: rotate(180deg);
 }
-
-.nav-open hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after {
-    opacity: 0;
-}
-
 
 .hamburger {
     display: block;
@@ -220,7 +211,7 @@ header {
     background: var(--clr-accent);
     width: 2em;
     height: 3px;
-    /* border-radius: 1em; */
+    border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
 
@@ -257,7 +248,7 @@ header {
     
 
     .intro__img {
-        box-shadow: var(--bs);
+        border-radius: 180px;
     }
 
     .intro__img {
@@ -265,6 +256,10 @@ header {
         min-width: 250px;
         position: relative;
         z-index: 2;
+    }
+    
+    .intro__img:hover {
+        filter: grayscale(100%);
     }
 
     .section__subtitle--intro {
@@ -281,17 +276,19 @@ header {
 /* portfolio section */
 
 .recent-work {
-    background-color: var(--clr-dark);
+    background-color: #260c1a;
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
-    text-align: center;
+    /* text-align: center; */
 }
+
 
 .section__title--recent-work {
     color: var(--clr-light);
     position: relative;
+    text-align: center;
 }
 
 .section__title--recent-work::after {
@@ -304,9 +301,9 @@ header {
     opacity: 0.25;
 }
 
-.my-recent-work {
-    margin-bottom: 4em;
-}
+/* .my-recent-work {
+    margin-bottom: 1em;
+} */
 
 .skill {
     max-width: 500px;
@@ -333,6 +330,12 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+}
+
+.qmantis-logo {
+    /* width: 100%; */
+    margin: auto;
+    max-width: 50%;
 }
 
 @media (min-width: 600px) {
@@ -383,10 +386,12 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
 }
 
 .portfolio__item {
+    margin: .25rem;
     background: var(--clr-accent);
     overflow: hidden;
 
@@ -454,9 +459,11 @@ header {
     padding: .5em;
 }
 
-
-
-
+.fa, .fab {
+    border-radius: 60px;
+    border: 1.5px solid var(--clr-dark);;
+    padding: 0.5em 0.6em;
+}
 
 
 

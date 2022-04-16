@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kathy Fregoso</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Open+Sans&display=swap" rel="stylesheet">
+
+      <!-- BEGIN favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <!-- <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#88D7C6" /> -->
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <!-- <meta name="msapplication-TileColor" content="#EE6F57" /> -->
+  <!-- <meta name="msapplication-config" content="images/favicon/browserconfig.xml" /> -->
+  <!-- <meta name="theme-color" content="#F6F1E7" /> -->
+  <!-- END favicon -->
 </head>
 <body>
 
     <header>
-        <!-- <div class="logo">
-            <img src="img/KFlogo.png" alt="Kathy Fregoso logo">
-        </div> -->
+
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -22,24 +31,26 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#recent-work" class="nav__link">Recent Work</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#recent-work" class="nav__link">QMantis</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Other Projects</a></li>
             </ul>
         </nav>
     </header>
 
            <!-- about ME -->
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Hi, I'm Kathy!</h2>
-        <!-- <p class="section__subtitle section__subtitle--about">Software Engineer</p> -->
+        <h2 class="section__title section__title--about">Hi, I'm Kathy.</h2>
 
         <div class="about-me__body">
-            <p>I'm a full-stack software engineer living in Los Angeles, CA, with experience in JavaScript, TypeScript, Node.js, Golang, PostgreSQL, MongoDB, Docker, and React. 
+            <p>I'm a full-stack software engineer living in Los Angeles, CA. 
             </p>
             <p>Recently, I co-created <strong><a class="about__link" href="https://github.com/qmantis">QMantis</a></strong>, 
-                an open source observability tool for GraphQL APIs built with express-graphql, TimeScaleDB/Promscale, and OpenTelemetry.
+                an open source observability tool for GraphQL APIs built with JavaScript, Node.js, TimeScaleDB, Docker, and OpenTelemetry.
             </p>
+            <p>I have multiple years of experience with a variety of languages and technologies, including Typescript, Golang, PostgreSQL, MongoDB, React, and Redux. </p>
+            <p>Before I started my career in tech, I worked as a non-profit grant writer, fundraiser, and case manager for several years. I have a Masters in Social Welfare.</p>
             <p>In my free time, I like to read, play with my cat, and expand my stationery collection, to name a few things.</p>
+
         </div>
         <img src="" alt="" class="about-me__img">
 
@@ -49,30 +60,32 @@
 
         <!-- Recent Work -->
     <section class="recent-work" id="recent-work">
-        <h2 class="section__title section__title--recent-work">Recent Work</h2>
+        <h2 class="section__title section__title--recent-work">QMantis</h2>
         <div class="my-recent-work">
-            <div class="skill">
-                <h3>HTML</h3>
-                <p>Let me build the foundation ....</p>
-            </div> 
-
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <p>I can make your website or app look stunning....</p>
-                </div> 
-
-                    <div class="skill">
-                        <h3>Javascript</h3>
-                        <p>Let me add a dose of functionality.</p>
-                    </div> 
+            <div class="qmantis__body">
+                <p>
+                    QMantis is a free, easy to set up observability solution for GraphQL APIs, enabling seamless analysis of slow requests, errors, resolver performance, and identification of backend bottlenecks.
+                </p>
+                <p>
+                    With only a few commands, QMantis allows you to:
+                    <ul>
+                        <li>Monitor your GraphQL API request rate, error rate, and latency</li>
+                        <li>Analyze traces for every request made to the <code>/graphql</code> endpoint</li>
+                        <li>Visualize the query made by the user and each resolvers' runtime</li>
+                        <li>Investigate bottlenecks in your GraphQL API backend</li>
+                    </ul>
+                </p>
+                <p><strong><a href="https://qmantis.co" class="btn case-study" target="_blank">Case Study</a></strong></p>
+                <p><strong><a href="https://www.youtube.com/watch?v=ECDKbk5-eqo" class="btn case-study" target="_blank">Presentation</a></strong> </p>
+            </div>
+            <img src="img/QMantis_graphic_color.png" alt="QMantis logo" class="qmantis-logo">
         </div> 
-
-        <a href="#projects" class="btn">Projects</a> 
+        <!-- <a href="#projects" class="btn"> Other Projects</a>  -->
     </section>
 
              <!-- Projects-->
     <section class="projects" id="projects">
-            <h2 class="section__title section__title--projects">Projects</h2>
+            <h2 class="section__title section__title--projects">Other Projects</h2>
             <p class="section__subtitle section__subtitle--projects"></p>
 
         <div class="portfolio">
@@ -102,19 +115,23 @@
     <!-- Footer -->
 
     <footer class="footer">
-        <a href="mailto:kathyfregoso@gmail.com" class="footer__link">kathyfregoso@gmail.com</a>
+        <strong><h2 class="section__title">Contact Me</h2></strong>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/kathyfregoso">
-                    <i class="fab fa-github-square"></i></a>
+                <a class="social-list__link" href="mailto:kathyfregoso@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i></a>
                 </li>
-            <!-- <li class="social-list__item">
-                <a class="social-list__link" href="https://codepen.io/kfregoso">
-                    <i class="fab fa-codepen"></i></a>
-            </li> -->
             <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/KathyFregoso">
-                    <i class="fab fa-twitter-square"></i></a>
+                <a class="social-list__link" href="https://www.github.com/kathyfregoso" target="_blank">
+                    <i class="fab fa-github"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/kathy-fregoso" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="" target="_blank">
+                    <i class="fa fa-file"></i></a>
             </li>
         </ul>
     </footer>
