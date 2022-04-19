@@ -5,13 +5,14 @@
 }
 
 :root {
-    --ff-primary: 'Barlow Semi Condensed', sans-serif;
+    --ff-primary: 'Saira', sans-serif;
     --ff-secondary: 'Open Sans', sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
     --clr-light: #F8F8F8;
+    --clr-gray: #A1A6B4;
     --clr-dark: #000100;
     --clr-accent: #B4D2E7;
 
@@ -116,7 +117,7 @@ h3 { font-size: var(--fs-h3) }
 /* navbar */
 
 header {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
@@ -139,7 +140,7 @@ header .nav__list {
 }
 
 header .nav__list a {
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-decoration: none;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -151,6 +152,43 @@ header .nav__list a {
 }
 
 /* About Me */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#typewriter {
+    width: 14ch;
+    animation: typing 2.5s steps(14), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    #typewriter {
+      width: 14ch;
+      animation: typing 2.5s steps(14), blink 0.5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      padding-bottom: 1rem;
+    }
+  }
 
 .about-me {
     max-width: 1000px;
@@ -174,7 +212,7 @@ header .nav__list a {
     text-align: center;
 }
 
-.section__title--about::after {
+.section__title--about::before {
     content: '';
     display: block;
     width: 2em;
@@ -213,12 +251,12 @@ header .nav__list a {
 /* Recent Work / QMantis */
 
 .recent-work {
-    background-color: #A1A6B4;
-    /* background-color: #260c1a; */
-    background-image: url(../img/services-bg.jpg);
+    /* background-color: #A1A6B4; */
+    background-color: var(--clr-light);
+    /* background-image: url(../img/services-bg.jpg); */
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--clr-dark);
     /* text-align: center; */
 }
 
@@ -228,24 +266,20 @@ header .nav__list a {
 }
 
 .section__title--recent-work {
-    color: var(--clr-light);
+    color: var(--clr-dark);
     position: relative;
     text-align: center;
 }
 
-.section__title--recent-work::after {
+.section__title--recent-work::before {
     content: '';
     display: block;
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     opacity: 0.25;
 }
-
-/* .my-recent-work {
-    margin-bottom: 1em;
-} */
 
 @media (min-width: 800px) {
     .my-recent-work {
@@ -259,8 +293,8 @@ header .nav__list a {
 /* Other Projects */
 
 .projects {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -270,31 +304,24 @@ header .nav__list a {
     text-align: center;
 }
 
-.section__title--projects::after {
+.section__title--projects::before {
     content: '';
     display: block;
     width: 2em;
     height: 1px;
     margin: 0.5em auto;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     opacity: 0.25;
 }
 
-/* .section__subtitle--projects {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
-} */
-
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    
+    grid-template-columns: repeat(auto-fit, minmax(187.5px, 437.5px));
+    justify-content: center;
 }
 
 .portfolio__item {
-    margin: .25rem;
-    background: var(--clr-accent);
+    margin: .5rem;
     overflow: hidden;
 
 }
@@ -317,6 +344,7 @@ header .nav__list a {
     opacity: .8;
 }
 
+
 /* Contact Me / Footer */
 
 .footer {
@@ -333,7 +361,7 @@ header .nav__list a {
     text-align: center;
 }
 
-.section__title--footer::after {
+.section__title--footer::before {
     content: '';
     display: block;
     width: 2em;

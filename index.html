@@ -6,8 +6,9 @@
     <title>Kathy Fregoso</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Open+Sans&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet"> 
       <!-- BEGIN favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
@@ -24,17 +25,22 @@
 
     <header>
         <ul class="nav__list">
+        <strong>
             <a href="#" class="nav__link">Home</a>
             <a href="#about" class="nav__link">About</a>
             <a href="#recent-work" class="nav__link">QMantis</a>
             <a href="#projects" class="nav__link">Projects</a>
             <a href="#contact-me" class="nav__link last">Contact</a>
+        </strong>
         </ul>
       </header>
 
            <!-- about ME -->
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Hi, I'm Kathy.</h2>
+        <div class="wrapper">
+            <h2 id="typewriter">Hi, I'm Kathy.</h2>
+            <!-- <h2 class="section__title section__title--about" id="typewriter">Hi, I'm Kathy.</h2> -->
+        </div>
 
         <div class="about-me__body">
             <p>I'm a full-stack software engineer living in Los Angeles, CA. 
@@ -43,7 +49,7 @@
                 an open source observability tool for GraphQL APIs built with JavaScript, Node.js, TimeScaleDB, Docker, and OpenTelemetry.
             </p>
             <p>I have multiple years of experience with a variety of languages and technologies, including Typescript, Golang, PostgreSQL, MongoDB, React, and Redux. </p>
-            <p>Before I started my career in tech, I worked as a non-profit grant writer, fundraiser, and case manager for several years. I have a Masters in Social Welfare.</p>
+            <p>Before I started my career in tech, I worked as a non-profit grant writer, fundraiser, and case manager for several years.</p>
             <p>In my free time, I like to read, play with my cat, and expand my stationery collection, to name a few things.</p>
 
         </div>
@@ -64,7 +70,6 @@
                     <ul>
                         <li>Monitor your GraphQL API request rate, error rate, and latency</li>
                         <li>Analyze traces for every request made to the <code>/graphql</code> endpoint</li>
-                        <li>Visualize the query made by the user and each resolvers' runtime</li>
                         <li>Investigate bottlenecks in your GraphQL API backend</li>
                     </ul>
                 </p>
@@ -73,7 +78,6 @@
             </div>
             <img src="img/QMantis_graphic_color.png" alt="QMantis logo" class="qmantis-logo">
         </div> 
-        <!-- <a href="#projects" class="btn"> Other Projects</a>  -->
     </section>
 
              <!-- Projects-->
@@ -84,22 +88,24 @@
         <div class="portfolio">
              <!-- PORTFOLIO Item 1 -->
             <div class="portfolio__item">
-                <img src="img/portfolio-01.jpg" alt="" class="portfolio--img">
+                <img src="img/chest-bin-preview.png" alt="" class="portfolio--img">
+                <h4>Chest Bin</h4>
+                <p>A database-backed app to collect and inspect webhook requests (Node.js/Express, React, MongoDB, Bootstrap, socket.io).</p>
+
             </div>
 
                 <!-- PORTFOLIO Item 2 -->
             <div class="portfolio__item">
-                <img src="img/portfolio-02.jpg" alt="" class="portfolio--img">
+                <img src="img/zello-preview.png" alt="" class="portfolio--img">
+                <h4>Zello</h4>
+                <p>A trello inspired task management app (React/Redux, Node.js/Express, MongoDB).</p>
             </div>
 
                 <!-- PORTFOLIO Item 3 -->
             <div class="portfolio__item">
-                <img src="img/portfolio-03.jpg" alt="" class="portfolio--img">
-            </div>
-
-                 <!-- PORTFOLIO Item 4 -->
-            <div class="portfolio__item">
-                <img src="img/portfolio-04.jpg" alt="" class="portfolio--img">
+                <img src="img/contact-manager-preview.png" alt="" class="portfolio--img">
+                <h4>Contact Manager</h4>
+                <p>A responsive, single page CRUD app to add/edit/filter/search/delete contacts and their tags (JavaScript, Handlebars, CSS, HTML). </p>
             </div>
 
         </div>
@@ -109,7 +115,7 @@
 
     <footer class="footer" id="contact-me">
         <strong><h2 class="section__title section__title--footer">Contact Me</h2></strong>
-        <p>Interested in working together? Let's talk:</p>
+
         <ul class="social-list">
             <li class="social-list__item">
                 <a class="social-list__link" class="footer__link" href="mailto:kathyfregoso@gmail.com" target="_blank">
