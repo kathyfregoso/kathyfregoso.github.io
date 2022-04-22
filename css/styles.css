@@ -17,7 +17,7 @@
     --clr-light: #F8F8F8;
     --clr-gray: #A1A6B4;
     --clr-dark: #343837;
-    --clr-accent: #B4D2E7;
+    --clr-accent: #88d7c6;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -282,7 +282,22 @@ h3 { font-size: var(--fs-h3) }
 .qmantis__link {
     color: #260c1a;
     text-decoration: none;
+
 }
+
+.logo__link {
+    color: #260c1a;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.logo__link:hover {
+    opacity: .7;
+    color: #ee6f57;
+    text-decoration: none;
+}
+
 .qmantis__link:hover {
     opacity: .7;
     color: #ee6f57;
@@ -297,12 +312,14 @@ h3 { font-size: var(--fs-h3) }
 
 .qmantis-logo {
     max-width: 20%;
-    position: relative;
-    text-align: center;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
 }
 
 .section__title--recent-work {
-    font-family: 'Fredoka One', cursive;
+    font-family: var(--ff-secondary);
+    /* font-family: 'Fredoka One', cursive; */
     position: relative;
     text-align: center;
 }
