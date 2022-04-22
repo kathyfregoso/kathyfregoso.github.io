@@ -50,7 +50,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 section {
@@ -72,7 +72,8 @@ strong { font-weight: var(--fw-bold) }
 }
 
 .btn {
-    display: inline-block;
+    display: block;
+    /* display: flex; */
     padding: .5em 2.5em;
     /* background: var(--clr-accent); */
     color: var(--clr-light);
@@ -80,12 +81,18 @@ strong { font-weight: var(--fw-bold) }
     /* background-color: #260c1a; */
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
     border-radius: 5px;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-left: 40%;
+    margin-right: 40%; */
 }
 
 .btn:hover {
@@ -251,8 +258,8 @@ header .nav__list {
   } */
 
 .about-me {
-    width: 100%;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 2rem auto;
     /* background-color: #0f062f; */
     color: var(--clr-dark);
     /* background-image: url("../img/sky-moon.jpg"); */
@@ -323,6 +330,7 @@ header .nav__list {
     background-blend-mode: multiply;
     /* color: var(--clr-dark); */
     /* text-align: center; */
+    padding-bottom: 2rem;
 }
 
 .qmantis__link {
@@ -416,7 +424,7 @@ header .nav__list {
     width: 2em;
     height: 1px;
     margin: 0.5em auto;
-    background: var(--clr-dark);
+    /* background: var(--clr-dark); */
     opacity: 0.25;
 }
 
@@ -446,10 +454,13 @@ header .nav__list {
 
 .portfolio--img:hover,
 .portfolio__item:focus .portfolio--img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .8;
 }
 
+.portfolio__item > h4, p {
+    text-align: center;
+}
 
 /* Contact Me / Footer */
 
@@ -475,7 +486,7 @@ header .nav__list {
     width: 2em;
     height: 1px;
     margin: 0.5em auto;
-    background: var(--clr-dark);
+    /* background: var(--clr-dark); */
     opacity: 0.25;
 }
 
