@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,14 +9,14 @@
 
 :root {
     --ff-primary: 'Spectral', serif;
-    /* --ff-secondary: 'Open Sans', sans-serif; */
+    --ff-secondary: 'Dancing Script', cursive;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
     --clr-light: #F8F8F8;
     --clr-gray: #A1A6B4;
-    --clr-dark: #000100;
+    --clr-dark: #343837;
     --clr-accent: #B4D2E7;
 
     --fs-h1: 3rem;
@@ -43,14 +46,15 @@ html {
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
-    margin: 3rem;
+    /* margin: 3rem; */
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    text-align: justify;
 }
 
 section {
-    padding: 5em 2em;
+    padding: 4em 4em;
 }
 
 img {
@@ -69,7 +73,7 @@ strong { font-weight: var(--fw-bold) }
     padding: .5em 2.5em;
     /* background: var(--clr-accent); */
     color: var(--clr-light);
-    background-color: var(--clr-dark);
+    background-color: #260c1a;
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -82,7 +86,7 @@ strong { font-weight: var(--fw-bold) }
 
 .btn:hover {
     transform: scale(1);
-    background-color: var(--clr-accent);
+    background-color: #ee6f57;
     opacity: .7;
 }
 
@@ -123,11 +127,11 @@ h3 { font-size: var(--fs-h3) }
 
 .icon {
     background-color: var(--clr-dark);
-    border: solid 1px var(--clr-dark);
-    border-radius: 25px;
-    margin: 2%;
-    min-width: 34px;
-    padding: 3px;
+    border: solid 5px var(--clr-dark);
+    border-radius: 4rem;
+    margin: 100%;
+    min-width: 3rem;
+    padding: 0;
     width: 100%;
   }
 
@@ -163,40 +167,6 @@ h3 { font-size: var(--fs-h3) }
     margin: 1rem;
   }
 
-header {
-    background-color: var(--clr-light);
-    overflow: hidden;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    /* padding: 20px 20px 16px 28px; */
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    /* flex-direction: row-reverse; */
-    transition: background-color 0.5s ease;
-  }
-  
-
-header .nav__list {
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center; 
-}
-
-header .nav__list a {
-    color: var(--clr-dark);
-    text-decoration: none;
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-
-.nav__link:hover {
-    opacity: .7;
-    color: var(--clr-accent);
-}
 
 /* About Me */
 
@@ -207,14 +177,15 @@ header .nav__list a {
   }
 
 #typewriter {
-    width: 14ch;
+    /* width: 14ch;
     animation: typing 2.5s steps(14), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
+    border-right: 3px solid; */
+    font-family: var(--ff-secondary);
 }
 
-@keyframes typing {
+/* @keyframes typing {
     from {
       width: 0;
     }
@@ -235,7 +206,7 @@ header .nav__list a {
       border-right: 3px solid;
       padding-bottom: 1rem;
     }
-  }
+  } */
 
 .about-me {
     max-width: 1000px;
@@ -244,6 +215,7 @@ header .nav__list a {
 
 .about-me__img {
     box-shadow: var(--bs);
+    
 }
 
 .about__link {
@@ -276,6 +248,7 @@ header .nav__list a {
     position: relative;
     z-index: 2;
     margin-top: 6rem;
+    filter: grayscale(50%);
 }
 
 @media (min-width: 600px) {
@@ -292,40 +265,44 @@ header .nav__list a {
 
 .about__link:hover {
     opacity: .7;
-    color: var(--clr-accent);
+    color: #ee6f57;
 }
 
 /* Recent Work / QMantis */
 
 .recent-work {
-    /* background-color: #A1A6B4; */
-    /* background-color: var(--clr-light); */
-    /* background: rgb(241,250,238);
-    background: linear-gradient(90deg, rgba(241,250,238,1) 42%, rgba(168,218,220,1) 93%);  */
-    /* background-image: url(../img/services-bg.jpg); */
+    background-color: #f6f1e7;
+    background: #f6f1e7;
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-dark);
+    /* color: var(--clr-dark); */
     /* text-align: center; */
 }
 
 .qmantis__link {
-    color: var(--clr-dark);
+    color: #260c1a;
     text-decoration: none;
 }
 .qmantis__link:hover {
     opacity: .7;
-    color: var(--clr-accent);
+    color: #ee6f57;
     text-decoration: none;
 }
 
-.qmantis-logo {
+.qmantis-architecture {
     margin: auto;
-    max-width: 50%;
+    max-width: 60%;
+    padding: 2rem;
+}
+
+.qmantis-logo {
+    max-width: 20%;
+    position: relative;
+    text-align: center;
 }
 
 .section__title--recent-work {
-    color: var(--clr-dark);
+    font-family: 'Fredoka One', cursive;
     position: relative;
     text-align: center;
 }
@@ -349,18 +326,24 @@ header .nav__list a {
     }
 }
 
+/* .qmantis__body {
+    padding: 1rem;
+} */
+
 /* Other Projects */
 
 .projects {
     /* background-color: var(--clr-light); */
     color: var(--clr-dark);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section__title--projects {
     grid-area: title;
     position: relative;
     text-align: center;
+    font-family: var(--ff-secondary);
+    /* color: #475F94; */
 }
 
 .section__title--projects::before {
@@ -412,12 +395,15 @@ header .nav__list a {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-body);
+    width: 100%;
 }
 
 .section__title--footer {
     grid-area: title;
     position: relative;
     text-align: center;
+    font-family: var(--ff-secondary);
+    /* color: #475F94; */
 }
 
 .section__title--footer::before {
@@ -461,23 +447,5 @@ header .nav__list a {
 
 .social-list__item {
     margin: 0 .5em;
-}
-
-
-/* .fa, .fab {
-    border-radius: 60px;
-    border: 1.5px solid var(--clr-dark);
-    padding: 0.5em 0.6em;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
+    /* width: 10rem; */
+} 
