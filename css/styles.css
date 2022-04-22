@@ -54,7 +54,10 @@ body {
 }
 
 section {
-    padding: 4em 4em;
+    /* padding: 4em 4em; */
+    padding-left: 6em;
+    padding-right: 5em;
+    /* margin-left: 4rem; */
 }
 
 img {
@@ -73,7 +76,8 @@ strong { font-weight: var(--fw-bold) }
     padding: .5em 2.5em;
     /* background: var(--clr-accent); */
     color: var(--clr-light);
-    background-color: #260c1a;
+    background-color: var(--clr-accent);
+    /* background-color: #260c1a; */
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -124,6 +128,35 @@ h3 { font-size: var(--fs-h3) }
 
 /* navbar */
 
+header {
+    background-color: var(--clr-dark);
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    /* background-color: var(--clr-dark); */
+    transition: background-color 0.5s ease;
+}
+
+header .nav__list a {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+header .nav__list {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly; 
+}
+
 
 .icon {
     background-color: var(--clr-dark);
@@ -146,7 +179,10 @@ h3 { font-size: var(--fs-h3) }
     position: fixed;
     top: 5px;
     left: 5px;
-    margin: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    /* margin-right: 2rem; */
+    /* padding: 5rem; */
   }
   
   #github-logo {
@@ -155,7 +191,10 @@ h3 { font-size: var(--fs-h3) }
     position: fixed;
     top: 55px;
     left: 5px;
-    margin: 1rem;
+    /* margin: 1rem; */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    /* margin-right: 2rem; */
   }
   
   #linkedin-logo {
@@ -164,7 +203,10 @@ h3 { font-size: var(--fs-h3) }
     position: fixed;
     top: 105px;
     left: 5px;
-    margin: 1rem;
+    /* margin: 1rem; */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    /* margin-right: 2rem; */
   }
 
 
@@ -209,8 +251,11 @@ h3 { font-size: var(--fs-h3) }
   } */
 
 .about-me {
-    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    /* background-color: #0f062f; */
+    color: var(--clr-dark);
+    /* background-image: url("../img/sky-moon.jpg"); */
 }
 
 .about-me__img {
@@ -248,6 +293,7 @@ h3 { font-size: var(--fs-h3) }
     position: relative;
     z-index: 2;
     margin-top: 6rem;
+    margin-bottom: 3rem;
     filter: grayscale(50%);
 }
 
@@ -311,6 +357,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .qmantis-logo {
+    margin-top: 2rem;
     max-width: 20%;
     /* position: relative; */
     display: flex;
@@ -319,12 +366,12 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--recent-work {
     font-family: var(--ff-secondary);
-    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Fredoka One', cursive;
     position: relative;
     text-align: center;
 }
 
-.section__title--recent-work::before {
+/* .section__title--recent-work::before {
     content: '';
     display: block;
     width: 2em;
@@ -332,7 +379,7 @@ h3 { font-size: var(--fs-h3) }
     margin: 0.5em auto 1em;
     background: var(--clr-dark);
     opacity: 0.25;
-}
+} */
 
 @media (min-width: 800px) {
     .my-recent-work {
@@ -407,7 +454,7 @@ h3 { font-size: var(--fs-h3) }
 /* Contact Me / Footer */
 
 .footer {
-    /* background: var(--clr-light); */
+    background-color: #f6f1e7;
     color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
@@ -420,7 +467,6 @@ h3 { font-size: var(--fs-h3) }
     position: relative;
     text-align: center;
     font-family: var(--ff-secondary);
-    /* color: #475F94; */
 }
 
 .section__title--footer::before {
@@ -445,7 +491,7 @@ h3 { font-size: var(--fs-h3) }
 .social-list__link {
     color: inherit;
     text-decoration: none;
-    padding: .5em;
+    padding: 1rem;
 }
 
 .footer__link:hover,
