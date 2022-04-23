@@ -219,50 +219,23 @@ header .nav__list {
 
 /* About Me */
 
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.3;
+  }
+
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-#typewriter {
-    /* width: 14ch;
-    animation: typing 2.5s steps(14), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid; */
-    font-family: var(--ff-secondary);
-}
-
-/* @keyframes typing {
-    from {
-      width: 0;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  
-  @media (min-width: 800px) {
-    #typewriter {
-      width: 14ch;
-      animation: typing 2.5s steps(14), blink 0.5s step-end infinite alternate;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid;
-      padding-bottom: 1rem;
-    }
-  } */
 
 .about-me {
     max-width: 1000px;
     margin: 2rem auto;
-    /* background-color: #0f062f; */
     color: var(--clr-dark);
-    /* background-image: url("../img/sky-moon.jpg"); */
 }
 
 .about-me__img {
@@ -437,14 +410,13 @@ header .nav__list {
 .portfolio__item {
     margin: .5rem;
     overflow: hidden;
-
 }
 
 .portfolio--img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-
+    border-radius: 5px;
 }
 
 .portfolio__item:focus {
