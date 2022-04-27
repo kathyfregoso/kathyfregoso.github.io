@@ -352,16 +352,6 @@ header .nav__list {
     text-align: center;
 }
 
-/* .section__title--recent-work::before {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-dark);
-    opacity: 0.25;
-} */
-
 @media (min-width: 800px) {
     .my-recent-work {
         display: flex;
@@ -371,9 +361,6 @@ header .nav__list {
     }
 }
 
-/* .qmantis__body {
-    padding: 1rem;
-} */
 
 /* Other Projects */
 
@@ -388,7 +375,6 @@ header .nav__list {
     position: relative;
     text-align: center;
     font-family: var(--ff-secondary);
-    /* color: #475F94; */
 }
 
 .section__title--projects::before {
@@ -408,8 +394,8 @@ header .nav__list {
 }
 
 .portfolio__item {
-    margin: .5rem;
-    overflow: hidden;
+    margin: .75rem;
+    /* overflow: hidden; */
 }
 
 .portfolio--img {
@@ -422,12 +408,13 @@ header .nav__list {
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
+    border-radius: 5px;
 }
 
-.portfolio--img:hover,
-.portfolio__item:focus .portfolio--img {
-    transform: scale(1.1);
+.portfolio--img:hover {
+    transform: scale(1.05);
     opacity: .8;
+    border-radius: 5px;
 }
 
 .portfolio__item > h4, p {
