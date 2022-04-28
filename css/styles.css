@@ -240,7 +240,6 @@ header .nav__list {
 
 .about-me__img {
     box-shadow: var(--bs);
-    
 }
 
 .about__link {
@@ -339,7 +338,7 @@ header .nav__list {
 
 .qmantis-logo {
     margin-top: 2rem;
-    max-width: 20%;
+    max-width: 50%;
     /* position: relative; */
     display: flex;
     justify-content: center;
@@ -399,9 +398,9 @@ header .nav__list {
 }
 
 .portfolio--img {
-    transition: 
+    /* transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
+        opacity 250ms linear; */
     border-radius: 5px;
 }
 
@@ -413,7 +412,7 @@ header .nav__list {
 
 .portfolio--img:hover {
     transform: scale(1.05);
-    opacity: .8;
+    /* opacity: .8; */
     border-radius: 5px;
 }
 
