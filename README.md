@@ -1,3 +1,1 @@
-# README #
-
-Portfolio website under construction.
+# README

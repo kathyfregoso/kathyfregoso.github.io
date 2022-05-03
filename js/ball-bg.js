@@ -3,7 +3,7 @@
 
 const colors = ["#88d7c6"];
 
-const numBalls = 40;
+const numBalls = 30;
 const balls = [];
 
 for (let i = 0; i < numBalls; i++) {

@@ -221,7 +221,7 @@ header .nav__list {
 
   .ball {
     position: absolute;
-    border-radius: 100%;
+    border-radius: 80%;
     opacity: 0.3;
   }
 
@@ -243,7 +243,7 @@ header .nav__list {
 }
 
 .about__link {
-    color: inherit;
+    color: #88d7c6;
     font-weight: var(--fwbold);
     font-size: var(--fs-h4);
     text-decoration: none;
@@ -306,7 +306,7 @@ header .nav__list {
 }
 
 .qmantis__link {
-    color: #260c1a;
+    color: #88d7c6;
     text-decoration: none;
 
 }
