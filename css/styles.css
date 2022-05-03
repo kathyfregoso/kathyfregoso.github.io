@@ -411,7 +411,7 @@ header .nav__list {
 }
 
 .portfolio--img:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     /* opacity: .8; */
     border-radius: 5px;
 }
