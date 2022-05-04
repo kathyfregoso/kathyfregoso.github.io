@@ -153,6 +153,13 @@ header {
     transition: background-color 0.5s ease;
 }
 
+@media only screen and (max-width: 1026px) {
+    .nav__list {
+        display: none;
+    }
+}
+
+
 header .nav__list a {
     color: var(--clr-light);
     text-decoration: none;
